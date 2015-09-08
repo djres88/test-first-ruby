@@ -1,1 +1,7 @@
-puts "This is my first github commit"
+def hello
+    "Hello!"
+end
+
+def greet(who)
+    "Hello, #{who}!"
+end

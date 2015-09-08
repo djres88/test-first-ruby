@@ -80,8 +80,19 @@ end
 # write tests and code for the following:
 
 describe "#multiply" do
-  it "multiplies two numbers"
-  it "multiplies several numbers"
+  it "multiplies two numbers" do
+  expect(multiply([5,10])).to eq(50)
+  end
+  it "multiplies several numbers" do
+  expect(multiply([3,7,10])).to eq(210)
+  end
+  #my own little tests:
+  it "multiplies arrays with zeros" do
+  expect(multiply([3,9,0,7])).to eq(0)
+  end
+  it "returns one number for one-number arrays" do
+  expect(multiply([4])).to eq(4)
+  end
 end
 
 describe "#power" do
